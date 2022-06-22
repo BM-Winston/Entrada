@@ -8,3 +8,17 @@ from .models import *
 
 def index(request):
     return render(request, 'index.html')
+
+
+
+def signup(request):
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            form.save()   
+
+        return redirect('login')
+    else:    
+        form = RegisterForm()
+    return render(request,'registration/signup.html',{'form':form})
+
