@@ -1,9 +1,26 @@
-h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    color: rgb(203, 224, 13);
+h4{
+    color: rgb(229, 250, 45);
+    font-family: 'Jim Nightshade', cursive;
 }
 
 body{
-    background-color: rgb(15, 14, 14);
+    background-color: rgb(4, 10, 41);
+    font-family: 'Jim Nightshade', cursive;
 }
+h2{
+    font-family: 'Jim Nightshade', cursive;
+
+}
+
+.card {
+         
+        
+        margin-left: 45%;
+        align-items: center;
+
+}
+
+span{
+    color: brown;
+}
+
