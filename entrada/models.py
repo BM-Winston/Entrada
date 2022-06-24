@@ -28,7 +28,7 @@ class Profile(models.Model):
 class Post(models.Model):
     image=models.ImageField(upload_to='images/',null=True)
     title=models.CharField(max_length=30)
-    description=models.TextField(max_length=100)
+    description=models.TextField(max_length=500)
     url= models.URLField(max_length=200)
 
     def __str__(self):
@@ -43,3 +43,8 @@ class Post(models.Model):
     def update_post(self):
 
         self.update()
+
+    @classmethod
+    def get_post(cls,searchTerm):
+        titles=cls.objects.filter(title__icontains=searchTerm)
+        return titles

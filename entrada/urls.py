@@ -12,6 +12,8 @@ urlpatterns =[
     path('account/', include('django.contrib.auth.urls')),
     path('profile/', views.profile, name='profile'),
     path('posts/', views.posts, name='posts'),
+    path('add_post/', views.add_post, name='add_post'),
+    path('search/', views.search_posts, name='search'),
 ]
 
 if settings.DEBUG:
